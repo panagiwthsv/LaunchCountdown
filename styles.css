@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, left bottom, from(#191a24), to(#343650));
+  background: linear-gradient(#191a24, #343650);
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  font-family: 'Red Hat Text', sans-serif;
+  min-height: 70vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .title {
+  color: white;
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 6px;
+}
+
+.container .countdown-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.container .countdown-block .countdown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .countdown-block .countdown-number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 120px;
+  width: 120px;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #343650), color-stop(50%, #2c2e44));
+  background: linear-gradient(to top, #343650 50%, #2c2e44 50%);
+  margin: 80px 10px 20px 10px;
+  font-size: 60px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 6px;
+}
+
+.container .countdown-block .countdown-number p {
+  background: -webkit-linear-gradient(#fb517b 50%, #fb6087 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container .countdown-block .countdown-title {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 12px;
+  font-weight: 200;
+  letter-spacing: 4px;
+  color: #8486a9;
+}
+
+.container .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  width: 10%;
+  bottom: 40px;
+  z-index: 99;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.container .stars {
+  position: absolute;
+  background-image: url("./images/bg-stars.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 50%;
+}
+
+.container .mountains {
+  position: absolute;
+  background-image: url("./images/pattern-hills.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  bottom: 0;
+  height: 210px;
+  width: 100%;
+}
+/*# sourceMappingURL=styles.css.map */

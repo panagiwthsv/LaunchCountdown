@@ -1,0 +1,108 @@
+$GrayishBlue: hsl(237, 18%, 59%);
+$SoftRed: hsl(345, 95%, 68%);
+$White: hsl(0, 0%, 100%);
+$DarkDesaturatedBlue: hsl(236, 21%, 26%);
+$VeryDarkBlue: hsl(235, 16%, 14%);
+$VeryDark: hsl(234, 17%, 12%);
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background:linear-gradient($VeryDark,$DarkDesaturatedBlue);  
+    height: 100vh;
+    width: 100vw;  
+}
+
+
+.container{
+    font-family: 'Red Hat Text', sans-serif;  
+    min-height: 70vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+    .title{
+        color: $White;
+        font-size: 20px;
+        font-weight: 200;
+        letter-spacing: 6px;
+    }
+
+    .countdown-block{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align:center;
+
+        .countdown{
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .countdown-number{    
+            display: flex;      
+            height: 120px;
+            width: 120px;
+            background:linear-gradient(to top , hsl(236, 21%, 26%) 50%, hsl(236, 21%, 22%) 50%);
+            margin:80px 10px 20px 10px;
+            font-size: 60px;
+            align-items: center;
+            justify-content: center;
+            border-radius: 6px;
+
+            p{
+                background: -webkit-linear-gradient(hsl(345, 95%, 65%) 50%, hsl(345, 95%, 68%) 50%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                
+                
+            }
+
+            
+        }
+
+        .countdown-title{
+            justify-content: center;
+            font-size: 12px;
+            font-weight: 200;
+            letter-spacing: 4px;
+            color: $GrayishBlue;
+        }
+    }
+
+    .socials{
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        width: 10%;
+        bottom: 40px;
+        z-index: 99;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    .stars{
+        position: absolute;
+        background-image: url('./images/bg-stars.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width:100%;
+        height: 50%;
+    }
+    .mountains{
+        position: absolute;
+        background-image: url('./images/pattern-hills.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        bottom: 0;
+        height: 210px;
+        width: 100%;
+    }
+}
